@@ -24,9 +24,19 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+
+
+    <!-- Jeffrey adding -->
+    <style>
+      .thumbnail {
+      border: 0 none;
+      box-shadow: none;
+      }
+    </style>
+    <!-- Jeffrey adding finished -->
+
+
   </head>
-
-
 
 
 
@@ -46,22 +56,37 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="pull-left"><img src="./resource/logo2.png" width="68"></a>
+        <a href="index.html" class="pull-left"><img src="./resource/logo2.png" width="68"></a>
         <a class="navbar-brand" href="#"><b>     </b></a>
-        <a class="navbar-brand" href="#"><b>AIPower.io</b></a>
+        <a class="navbar-brand" href="index.html"><b>AIPower.io</b></a>
       </div>
+
      <div id="navbar" class="navbar-collapse collapse">
        <!-- Source Control Mar22.2014 -->
        <ul class="nav navbar-nav">
-         <li class="active"><a href="index.html"><b>WhitePaper</b></a></li>
-         <li><a href="a.html">Team</a></li>
-         <li><a href="mailto:aertoria@gmail.com">Contact</a></li>
-         <li><a href="https:">PPT Auctions</a></li>
-         <li><a href="https:">AIP Trading</a></li>
-         <li><a href="http:">Sign in</a></li>
+         <li calss="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" herf="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WhitePaper</a>
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink" style="text-align: center;">
+                <a class="dropdown-item" href="./resource/AIPower WhitePaper 1.0.pdf" target="_blank">WhitePaper</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./resource/白皮书中文1.0.pdf" target="_black">白皮书</a>
+            </div>
+         </li>
+         <li class="nav-item"><a class="smoothScroll" href="#team">Team</a></li>
+         <li class="nav-item"><a href="index.html">PPT Auctions</a></li>
+         <li class="nav-item"><a href="index.html">AIP Trading</a></li>
+         <li class="nav-item"><a href="index.html">Contact</a></li>
        </ul>
+       <ul class="nav navbar-nav navbar-right">
+          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-new-window"></span> Sign up</a></li>
+          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+       </ul>
+
        <!-- Source Control Mar22.2014 -->
       </div><!--/.nav-collapse -->
+
+
+
     </div>
   </nav>
    <!-- Fixed navbar END -->
@@ -72,12 +97,14 @@
 <div style="position:relative;">
 
 <video width="100%" height="80%"  autoplay loop muted  id="background" style="position:relative;z-index:0;">
- <source src="./resource/salesforce2.mp4" type="video/mp4">
+ <source src="./resource/worldNetwork.mp4" type="video/mp4">
 </video>
 <div class="carousel-caption" style="position:absolute;top:40%;left:20%;z-index:1;">
  <font size="100em" ><b>Introducing </br > AIPower.io</b></font>
  <h4>Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June </h4>
- <p><a class="btn btn-lg btn-primary" href="https://www.sfdc.co/Heimdall_ava" target="itunes_store" role="button">WhitePaper</a> &nbsp; <a class="btn btn-lg btn-primary" href="https://www.sfdc.co/Heimdall_ava" target="itunes_store" role="button">白皮书</a></p>
+ <p><a class="btn btn-lg btn-primary" href="./resource/AIPower WhitePaper 1.0.pdf" target="itunes_store" role="button">WhitePaper</a> &nbsp;
+    <a class="btn btn-lg btn-primary" href="./resource/白皮书中文1.0.pdf" target="itunes_store" role="button">白皮书</a></p>
+ 
 </div>
 </div>
 
@@ -237,13 +264,189 @@
       We dont have capacity to go further on this path yet, however, we denefitly want to. For now, all components is checked in at github at salesforce. Feel free to take a look. </p>
       <b class="lead"><b>Continue reading</b>
         <br>Coding Example of AIP in ERC20:
-        <br>contract AIPBasic {
-        <br>  uint256 public totalSupply; //AIP issuing amount is fixed at 10billion
-         <br> function balanceOf(address ower) public view returns (uint256);
-         <br>  function transfer(address to, uint256 value) public returns (bool);
-         <br> event Transfer(address indexed from, address indexed to, uint256 value);
-        <br>}
+        <code>contract AIPBasic {
+         <br>  &nbsp; &nbsp;uint256 public totalSupply; //AIP issuing amount is fixed at 10billion
+         <br>  &nbsp; &nbsp;function balanceOf(address ower) public view returns (uint256);
+         <br>  &nbsp; &nbsp;function transfer(address to, uint256 value) public returns (bool);
+         <br>  &nbsp; &nbsp;event Transfer(address indexed from, address indexed to, uint256 value);
+         <br>}
+       </code>
       </b>
+    </div>
+  </div>
+
+
+  <!-- Team Section -->
+  <div class="container" id="team">
+    <h2 class="featurette-heading" style="text-align: center">Meet The Team</h2>
+      <br><br><br>
+      <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="#team">
+            <img src="./resource/TeamImg/Tony.png" class="img-circle" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%"><strong>Stevn&nbspDong</strong><br>CEO</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg">
+            <img src="./resource/TeamImg/Tony.png" class="img-circle" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%"><strong>Tony&nbspHu</strong><br>President</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="https://www.linkedin.com/in/wangethan/">
+            <img src="./resource/TeamImg/Ethan.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%"><strong>Ethan&nbspWang</strong><br>co-CTO</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%"><strong>Fei&nbspWang</strong><br>co-CTO</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="#team">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="#team">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="#team">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="./resource/TeamImg/ChenWei.png" class="img-circle" alt="Lights" width="304" height="236">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%">Chief Designer</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
