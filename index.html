@@ -100,14 +100,19 @@
  <source src="./resource/worldNetwork.mp4" type="video/mp4">
 </video>
 <div class="carousel-caption" style="position:absolute;top:40%;left:20%;z-index:1;">
- <font size="100em" ><b>Introducing </br > AIPower.io</b></font>
- <h4>Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June </h4>
+
+
+  <font size="100em" >AIPower is <span id="typewrite"></span></font>
+<h4> </h4>
+
+
+
  <p><a class="btn btn-lg btn-primary" href="./resource/AIPower WhitePaper 1.0.pdf" target="itunes_store" role="button">WhitePaper</a> &nbsp;
     <a class="btn btn-lg btn-primary" href="./resource/白皮书中文1.0.pdf" target="itunes_store" role="button">白皮书</a></p>
  
 </div>
 </div>
-
+Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June 
 
 <div class="container">
 
@@ -181,8 +186,8 @@
   <p class="lead">Example: paste them into Browser and hit enter</p>
   <font class="text-muted" style="font-size: 150%">
     <p class="bg-success">
-      <kbd>Chrome or Firefox</kbd> <br />
-      <kbd>1</kbd>https://www.sfdc.co/Heimdall_ava
+      <kbd>Ethereum</kbd> <br />
+      <kbd>address</kbd> 09fc044cfed4acb935e1a4baae8b1884e6a19827
     </p>
   </font>
   </p>
@@ -286,7 +291,7 @@
           <a href="#team">
             <img src="./resource/TeamImg/Li Li.png" class="img-circle" alt="Lights" style="width:100%">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Li&nbspLi</strong><br>Chair</p>
+              <p style="text-align: center; font-size:150%"><strong>Li&nbspLi</strong><br>Chair of Board</p>
             </div>
           </a>
         </div>
@@ -296,7 +301,7 @@
           <a href="/w3images/nature.jpg">
             <img src="./resource/TeamImg/Steven.png" class="img-circle" alt="Lights" style="width:100%">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Steven&nbspDong</strong><br>CEO</p>
+              <p style="text-align: center; font-size:150%"><strong>Steven&nbspDong</strong><br>Founder & CEO</p>
             </div>
           </a>
         </div>
@@ -306,7 +311,7 @@
           <a href="https://www.linkedin.com/in/wangethan/">
             <img src="./resource/TeamImg/Tony.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Tony&nbspHu</strong><br>President</p>
+              <p style="text-align: center; font-size:150%"><strong>Tony&nbspHu</strong><br>Founder & President</p>
             </div>
           </a>
         </div>
@@ -316,7 +321,7 @@
           <a href="/w3images/fjords.jpg">
             <img src="./resource/TeamImg/Ethan.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Ethan&nbspWang</strong><br>co-CTO</p>
+              <p style="text-align: center; font-size:150%"><strong>Ethan&nbspWang</strong><br>Cofounder & CTO</p>
             </div>
           </a>
         </div>
@@ -328,7 +333,7 @@
           <a href="#team">
             <img src="./resource/TeamImg/Fei.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Fei&nbspWang</strong><br>co-CTO</p>
+              <p style="text-align: center; font-size:150%"><strong>Fei&nbspWang</strong><br>Cofounder & COO</p>
             </div>
           </a>
         </div>
@@ -370,7 +375,7 @@
           <a href="#team">
             <img src="./resource/TeamImg/Kewen.png" class="img-circle" alt="Kewen" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:90%"><strong style="font-size:166%">Kewen&nbspChen</strong><br>Director of Electrical Engineering & Operation</p>
+              <p style="text-align: center; font-size:90%"><strong style="font-size:166%">Kewen&nbspChen</strong><br>VP of Electrical Engineering</p>
             </div>
           </a>
         </div>
@@ -481,7 +486,7 @@
 
       <div class="row featurette">
         <div class="col-md-8">
-          <h2 class="featurette-heading"> Argus-powered<span class="text-muted"> Free to distribute.</span></h2>
+          <h2 class="featurette-heading"> Blockchain powered<span class="text-muted"> Free to distribute.</span></h2>
           <p class="lead">AIPower.io This means all its components are opensourced and free to re-distribute based on your teams need.
             Argus components includes ArgusCore, ArgusWebService and ArgusWeb. In addition to that, at our github you will find GrahiteETL, GrahiteWebService etc to fit different needs. If you need help to set a pipeline up for your team, please let us know.</p>
         </div>
@@ -515,10 +520,51 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./assets/js/typewriter.js"></script>
+    
+    
+    
+
+
+    <script>
+    var app = document.getElementById('typewrite');
+
+    var typewriter = new Typewriter(app, {
+      loop: true
+    });
+
+    typewriter.typeString('here')
+      .pauseFor(3000)
+      .deleteAll()
+      .typeString('photovoltaic')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('a cleaner world')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('truly distributed')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('trust')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('new microgird')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('1 token = 1 kwh')
+      .pauseFor(4000)
+      .deleteAll()
+      .typeString('future')
+      .pauseFor(8000)
+      .start();
+    </script>
+    
+    
+
   </body>
 </html>
