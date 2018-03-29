@@ -26,8 +26,89 @@
     <link href="carousel.css" rel="stylesheet">
 
 
+
     <!-- Jeffrey adding -->
+    <!-- roadmap css-->
+
     <style>
+      .line {
+        background-color: none;/* #1D1D1D; */
+        min-height: 155vh;
+        position: relative;
+        margin: 0;
+        font-family: 'Droid Sans', sans-serif;
+      }
+      .line:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        bottom: 10px;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 4px;
+        background-color: black; /* #fff;*/
+      }
+      .line .entries {
+        width: calc(100% - 80px);
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+        left: -5px;
+      }
+      .line .entries .entry {
+        border: 2px solid grey;
+        border-radius: 10px;
+        width: calc(50% - 80px);
+        float: left;
+        padding: 20px;
+        clear: both;
+        text-align: right;
+      }
+      .line .entries .entry:not(:first-child) {
+        margin-top: -20px;
+      }
+      .line .entries .entry .title {
+        font-size: 32px;
+        margin-bottom: 12px;
+        position: relative;
+        color: black;/*#fff;*/
+      }
+      .line .entries .entry .title:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 4px solid white;
+        background-color: #3b3b3b;
+        border-radius: 100%;
+        top: 50%;
+        right: -115px;
+        z-index: 1000;
+      }
+      .line .entries .entry .title.big:before {
+        width: 24px;
+        height: 24px;      
+        right: -119px;
+      }
+      .line .entries .entry .body {
+        color: #aaa;
+      }
+      .line .entries .entry .body p {
+        line-height: 1.4em;
+      }
+      .line .entries .entry:nth-child(2n) {
+        text-align: left;
+        float: right;
+      }
+      .line .entries .entry:nth-child(2n) .title:before {
+        left: -105px;
+      }
+      .line .entries .entry:nth-child(2n) .title.big:before {
+        left: -109px;
+      }
+
+
       .thumbnail {
       border: 0 none;
       box-shadow: none;
@@ -45,7 +126,7 @@
 =====X X X X=====
 =====X X X X=====
 -->
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
    <!-- Fixed navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -72,14 +153,15 @@
                 <a class="dropdown-item" href="./resource/白皮书中文1.0.pdf" target="_black">白皮书</a>
             </div>
          </li>
-         <li class="nav-item"><a class="smoothScroll" href="#team">Team</a></li>
-         <li class="nav-item"><a href="index.html">PPT Auctions</a></li>
-         <li class="nav-item"><a href="index.html">AIP Trading</a></li>
-         <li class="nav-item"><a href="index.html">Contact</a></li>
+         <li><a href="index.html">PPT Auctions</a></li>
+         <li><a href="index.html">AIP Trading</a></li>
+         <li><a href="#Roadmap">Roadmap</a></li>
+         <li><a href="#team">Team</a></li>
+         <li><a href="index.html">Contact Us</a></li>
        </ul>
        <ul class="nav navbar-nav navbar-right">
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-new-window"></span> Sign up</a></li>
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-new-window"></span> Sign up</a></li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
        </ul>
 
        <!-- Source Control Mar22.2014 -->
@@ -281,27 +363,111 @@ Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June
   </div>
 
 
+
+
+  <!-- Road Map Section -->
+  <div class="container" id="Roadmap">
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading" style="text-align: center">Road Map</h2>
+    <br><br>
+  </div>
+
+  <div class="line">
+    <div class="entries">
+      <div class="entry">
+        <div class="title">Q3 2017</div>
+        <div class="body">
+          <p>AIPower Initiated</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q2 2018</div>
+        <div class="body">
+          <p>BD: AIP ICO</p>
+          <p>R&D: AIP Token 1.0</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q3 2018</div>
+        <div class="body">
+          <p>BD: 1<sup>st</sup> Energy Producer Contract Signed</p>
+          <p>R&D: PPT Token 1.0 <br>PPT Wallet 1.0</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q4 2018</div>
+        <div class="body">
+          <p>BD: 500MW Projects Contract Signed</p>
+          <p>R&D: PPT Auction Platform .Beta</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">Q1 2019</div>
+        <div class="body">
+          <p>BD: 1<sup>st</sup> Project PPT selling action initiating</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q2 2019</div>
+        <div class="body">
+          <p>BD: Contracts Signed with Service Provider &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp & testing with PPT</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">Q3 2019</div>
+        <div class="body">
+          <p>BD: 1GW Projects connected to AIPower Platform</p>
+          <p>R&D: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPPT Wallet 2.0 <br>PPT Service Initiating</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q4 2019</div>
+        <div class="body">
+          <p">R&D:</p>
+          <p>PPT 3.0 (Micro-grid Application)</p>
+          <p>AI Management Software development</p>
+          <p>AI Management Hardware development</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q1 2020</div>
+        <div class="body">
+          <p>BD: AI Management Integration</p>
+          <p">R&D: Launch P2P trading marketplace</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">Q2 2020</div>
+        <div class="body">
+          <p>BD: AI Micro-Grid in Southest Asia</p>
+          <p">R&D: AI Micro-Grid 2.0</p>
+        </div>
+      </div>
+      <div class="entry">
+      <div class="title big" style="text-align: center;">Future</div>
+    </div>
+    </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
   <!-- Team Section -->
   <div class="container" id="team">
+    <hr class="featurette-divider">
     <h2 class="featurette-heading" style="text-align: center">Meet The Team</h2>
       <br><br><br>
       <div class="row">
       <div class="col-md-3">
         <div class="thumbnail">
-          <a href="#team">
-            <img src="./resource/TeamImg/Li Li.png" class="img-circle" alt="Lights" style="width:100%">
-            <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Li&nbspLi</strong><br>Chair of Board</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail">
           <a href="/w3images/nature.jpg">
             <img src="./resource/TeamImg/Steven.png" class="img-circle" alt="Lights" style="width:100%">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Steven&nbspDong</strong><br>Founder & CEO</p>
+              <p style="text-align: center; font-size:150%"><strong>Steven&nbspDong</strong><br>Co-founder & CEO</p>
             </div>
           </a>
         </div>
@@ -311,7 +477,17 @@ Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June
           <a href="https://www.linkedin.com/in/wangethan/">
             <img src="./resource/TeamImg/Tony.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Tony&nbspHu</strong><br>Founder & President</p>
+              <p style="text-align: center; font-size:150%"><strong>Tony&nbspHu</strong><br>Co-founder & President</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="#team">
+            <img src="./resource/TeamImg/Li Li.png" class="img-circle" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center; font-size:150%"><strong>Li&nbspLi</strong><br>Co-Founder & CFO</p>
             </div>
           </a>
         </div>
@@ -321,7 +497,7 @@ Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June
           <a href="/w3images/fjords.jpg">
             <img src="./resource/TeamImg/Ethan.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Ethan&nbspWang</strong><br>Cofounder & CTO</p>
+              <p style="text-align: center; font-size:150%"><strong>Ethan&nbspWang</strong><br>Co-founder & CTO</p>
             </div>
           </a>
         </div>
@@ -333,7 +509,7 @@ Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June
           <a href="#team">
             <img src="./resource/TeamImg/Fei.png" class="img-circle" alt="Lights" width="304" height="236">
             <div class="caption">
-              <p style="text-align: center; font-size:150%"><strong>Fei&nbspWang</strong><br>Cofounder & COO</p>
+              <p style="text-align: center; font-size:150%"><strong>Fei&nbspWang</strong><br>Co-founder & COO</p>
             </div>
           </a>
         </div>
@@ -539,28 +715,28 @@ Blockchain-based Energy Trading Platform powered by AI. Releasing at 2018.June
     });
 
     typewriter.typeString('here')
-      .pauseFor(3000)
+      .pauseFor(2000)
       .deleteAll()
-      .typeString('photovoltaic')
-      .pauseFor(4000)
+      .typeString('Green')
+      .pauseFor(2000)
       .deleteAll()
       .typeString('a cleaner world')
-      .pauseFor(4000)
+      .pauseFor(2000)
       .deleteAll()
-      .typeString('truly distributed')
-      .pauseFor(4000)
+      .typeString('Desentralized')
+      .pauseFor(2000)
       .deleteAll()
-      .typeString('trust')
-      .pauseFor(4000)
+      .typeString('Secure')
+      .pauseFor(2000)
       .deleteAll()
-      .typeString('new microgird')
-      .pauseFor(4000)
+      .typeString('AI + Micro-Gird')
+      .pauseFor(2000)
       .deleteAll()
-      .typeString('1 token = 1 kwh')
-      .pauseFor(4000)
+      .typeString('tokenlizing the energy')
+      .pauseFor(2000)
       .deleteAll()
       .typeString('future')
-      .pauseFor(8000)
+      .pauseFor(4000)
       .start();
     </script>
     
