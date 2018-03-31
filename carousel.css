@@ -94,6 +94,49 @@ body {
 }
 
 
+
+/* Jeffrey Edit Zone
+-----------------------------------*/
+/*roadmap*/
+.map {
+  opacity: 0;
+  filter: alpha(opacity = 0);
+}
+
+/*team detail*/
+#panel {
+  padding: 5px;
+  border: solid 2px;
+  display: none;
+}
+
+.pointer {cursor: pointer;}
+
+/* Token img*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.tokentitle{
+text-align: center;
+font-size: 30px;
+color:yellowgreen;
+font-family: "Times New Roman", Times, serif;
+font-style: oblique;
+}
+
+/* team img*/
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+}
+
+
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
