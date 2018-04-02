@@ -3,9 +3,9 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  background-color: none;
+  background-color: #3b3b3b;
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: white;/*#5a5a5a;*/
 }
 
 
@@ -130,12 +130,21 @@ font-style: oblique;
 
 /* team img*/
 .thumbnail {
+  background-color: #3b3b3b;
   border: 0 none;
   box-shadow: none;
 }
 
 
+.thumbnail p{
+  color:white;
+  text-align: center;
+  font-size: 100%;
+}
 
+.thumbnail p strong{
+  font-size: 170%;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

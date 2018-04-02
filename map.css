@@ -1,6 +1,6 @@
 .line {
         background-color: none;/* #1D1D1D; */
-        min-height: 167vh;
+        min-height: 1550px;
         position: relative;
         margin: 0;
         font-family: 'Droid Sans', sans-serif;
@@ -39,7 +39,7 @@
         font-size: 32px;
         margin-bottom: 12px;
         position: relative;
-        color: black;/*#fff;*/
+        color: #aaa;/*#fff;*/
       }
       .line .entries .entry .title:before {
         content: '';
@@ -59,7 +59,7 @@
         right: -119px;
       }
       .line .entries .entry .body {
-        color: #aaa;
+        color: white;
       }
       .line .entries .entry .body p {
         line-height: 1.4em;
