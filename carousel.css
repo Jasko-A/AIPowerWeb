@@ -91,12 +91,22 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  text-align: center;
 }
 
 
 
 /* Jeffrey Edit Zone
 -----------------------------------*/
+/*social icons*/
+.social-icons{
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+
 /*roadmap*/
 .map {
   opacity: 0;
@@ -104,7 +114,10 @@ body {
 }
 
 /*team detail*/
-#panel {
+#panel1, #panel2, #panel3, #panel4, #panel5, #panel6,
+#panel7, #panel8, #panel9,#panel10, #panel11, #panel12,
+#panel13, #panel14, #panel15,#panel16, #panel17, #panel18,
+#panel19, #panel20, #panel21 {
   padding: 5px;
   border: solid 2px;
   display: none;
@@ -121,11 +134,11 @@ body {
 }
 
 .tokentitle{
-text-align: center;
-font-size: 30px;
-color:yellowgreen;
-font-family: "Times New Roman", Times, serif;
-font-style: oblique;
+  text-align: center;
+  font-size: 30px;
+  color:yellowgreen;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
 }
 
 /* team img*/
