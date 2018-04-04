@@ -94,10 +94,11 @@ function mapFunction(){
 //</script>
 
 //<!--smoothscroll to id jump-->
-//<script>
+
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a").not("#slideleft").not("#slideright").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -119,4 +120,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-//</script>
