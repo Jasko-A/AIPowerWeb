@@ -35,6 +35,8 @@ body {
 }
 /* resize navbar when at most 991px on screen size*/
 @media (max-width: 991px) {
+
+
     .navbar-header {
         float: none;
     }
