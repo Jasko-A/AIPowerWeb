@@ -203,7 +203,7 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media DISABLED { /*I dont think this is needed don't do anything to what I can see i left it as disabled just delete that if you want it back*/
+@media { /*I dont think this is needed don't do anything to what I can see i left it as disabled just delete that if you want it back*/
     @media (min-width: 768px) {
     /* Navbar positioning foo */
     .navbar-wrapper {
