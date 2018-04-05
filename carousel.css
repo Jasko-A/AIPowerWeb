@@ -33,7 +33,7 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-
+/* resize navbar when at most 991px on screen size*/
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
@@ -60,8 +60,16 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
     
 }
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
