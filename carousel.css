@@ -127,7 +127,7 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: 2px;
   text-align: center;
 }
 
@@ -142,8 +142,14 @@ body {
 
 .coin-icon {
   align:middle;
+  width: 80% !important;
 }
 
+.lead {
+  font-size: 0.8vw;
+  letter-spacing: 1px;
+  text-align: justify;
+}
 
 
 /* Jeffrey Edit Zone
@@ -155,7 +161,10 @@ body {
   font-size: 50px;
 }
 
-
+/*Our Goal Image*/
+.goalImg {
+  width:60% !important;
+}
 
 /*roadmap*/
 .map {
