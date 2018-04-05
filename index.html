@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -54,7 +54,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -65,16 +65,16 @@
 
      <div id="navbar" class="navbar-collapse collapse">
        <!-- Source Control Mar22.2014 -->
-       <ul class="nav navbar-nav">
-         <li calss="nav-item dropdown">
+       <ul class="nav navbar-nav ">
+         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle pointer" herf="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WhitePaper</a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink" style="text-align: center;">
+            <div class="dropdown-menu dropdown-menu-left" aria-labeledby="navbarDropdownMenuLink" style="text-align: center;">
                 <a class="dropdown-item" href="./resource/AIPower WhitePaper 1.0.pdf" target="_blank">WhitePaper</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="./resource/白皮书中文1.0.pdf" target="_black">白皮书</a>
             </div>
          </li>
-         <li class="nav-item"><a href="#about-us">About Us</a></li>
+         <li><a href="#about-us">About Us</a></li>
          <li class="nav-item"><a href="#token">Token Model</a></li>
          <li class="nav-item"><a href="#Roadmap">Road Map</a></li>
          <li class="nav-item"><a href="#team">Team</a></li>
@@ -155,25 +155,25 @@
   		<h2 align="middle" class="featurette-heading"> <b>Our Goal</b></h2>
   		<br>
   		<div class="row featurette">
-    		<div class="col-md-4">
+    		<div class="col-md-4 col-sm-4 col-xs-12">
       			<img src="./resource/money.png" alt="Raise Capital" class="center"><br>
             <ul>
-                <li class="lead">Raising Capital for Renewable Energy Projects.</li>
-                <li class="lead">Increasing Invester's R O I.</li>
+                <li class="lead" id="our-goal">Raising Capital for Renewable Energy Projects.</li>
+                <li class="lead" id="our-goal">Increasing Invester's R O I.</li>
             </ul>
     		</div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-12">
             <img src="./resource/stable.png" alt="Stability" class="center"><br>
             <ul>
-                <li class="lead">Use Smart Grid to Stablize Energy System.</li>
-                <li class="lead">Saving Money for both Producers and Customers.</li>
+                <li class="lead" id="our-goal">Use Smart Grid to Stablize Energy System.</li>
+                <li class="lead" id="our-goal">Saving Money for both Producers and Customers.</li>
             </ul>
         </div>
-   			<div class="col-md-4">
+   			<div class="col-md-4 col-sm-4 col-xs-12">
             <img src="./resource/earth.png" alt="Green Earth" class="center"><br>
             <ul>
-                <li class="lead">Change Traditional Energy Structure.</li>
-                <li class="lead">Make a Healther World.</li>
+                <li class="lead" id="our-goal">Change Traditional Energy Structure.</li>
+                <li class="lead" id="our-goal">Make a Healther World.</li>
             </ul>
         </div>
   	</div>
@@ -204,7 +204,7 @@
 
   <div class="row featurette">
     <div class="col-md-3">
-      <img class="img-responsive" src="./resource/AIP.png">
+      <img class="img-responsive coin-icon center-block" src="./resource/AIP.png">
     </div>
     <div class="col-md-9">
       <h2 class="featurette-heading" style="font-size: 40px;"><b>AIPower Token</b><span class="text-muted">--AIP</span></h2>
@@ -242,8 +242,8 @@
   </p>
   <hr class="featurette-divider">
   <div class="row featurette">
-    <div class="col-md-3">
-      <img class="img-responsive" src="./resource/PPS.png">
+    <div class="col-md-3 col-sm-12">
+      <img class="img-responsive coin-icon center-block" src="./resource/PPS.png">
     </div>
     <div class="col-md-9">
       <h2 class="featurette-heading" style="font-size: 30px;"><b>PowerPoints Token</b><span class="text-muted">--PPS</span></h2>
@@ -266,11 +266,38 @@
   <br>
   <h2 style="font-size: 25px;"><b>Complete Path</b></h2>
   	<p class="lead" align="center">
-  		<br><br>
-  	<img class="img-responsive" src="./resource/PPSsale1.png" align="center" width="1000">
-  	<br>
+  	   <br><br>
+  	   <img class="img-responsive zoom-diagram" id="PPSsale-img" src="./resource/PPSsale1.png" align="center" width="1000">
+  	   <br>
   	</p>
   <br><br>
+  <div id="myZoom" class="zoom">
+    <span class="close">&times;</span>
+    <img class="zoom-content" id="PPSzoom">
+    <div id="caption"></div>
+  </div>
+  <script>
+    // Get the zoom element
+    var modal = document.getElementById("myZoom");
+
+    // Get the image and insert it inside zoom 
+    var img = document.getElementById("PPSsale-img");
+    var modalImg = document.getElementById("PPSzoom");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
   <h2 style="font-size: 30px;">Applications of <span class="text-muted">PPS</span></h2>
 	<p class="lead" align="center">
   		<br><br>
