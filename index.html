@@ -38,38 +38,107 @@
   <script type="text/javascript">
   	google.charts.load('current', {'packages':['corechart']});
   	google.charts.setOnLoadCallback(drawChart);
-
-  	function drawChart() {
-
-  		var data = google.visualization.arrayToDataTable([
-  			['Distribution', 'AIP (in biliions'],
-  			['Pre-sale & ICO',     35],
-  			['Mining',      20],
-  			['Community',  10],
-  			['Foundation', 15],
-  			['Team',    20]
-  			]);
-
-  		var options = {
-        is3D:true,
-  			legend:{position:'top', alignment:'center'},
-  			backgroundColor:'transparent',
-  			legendTextStyle: {color:'#FFF'},
-  			titleTextStyle: { color: '#FFF' },
-  			hAxis: {
-  				textStyle:{color: '#FFF'}
-  			}
-  		};
-
-  		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-  		chart.draw(data, options);
-  	}
   </script>
 
+
+  <!-- Fancy PieChart -->
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
   <!-- Jeffrey adding finished -->
 
+  <!-- Fancy PieChart 
+  <script type="text/javascript">
+  	var chart = AmCharts.makeChart("chartdiv", {
+  		"color":"white",
+  		"labelRadius":50,
+  		"fontSize": "15",
+  		"type": "pie",
+  		"startDuration": 0,
+  		"hideCredits":true,
+  		"theme": "light",
+  		"depth3D":1,
+  		"addClassNames": true,
+  		"labelTickColor": "blue",
+  		"labelTickAlpha": 1,
+  		"export":{
+  			"enabled": true,
+		    "menu": [{
+		      "class": "export-main",
+		      "format": "PRINT"
+		    }]
+  		},
+  		"legend":{
+  			"enabled":false
+  		},
+  		"innerRadius": "30%",
+  		"defs": {
+  			"filter": [{
+  				"color":"white",
+  				"id": "shadow",
+  				"width": "200%",
+  				"height": "200%",
+  				"feOffset": {
+  					"result": "offOut",
+  					"in": "SourceAlpha",
+  					"dx": 0,
+  					"dy": 0
+  				},
+  				"feGaussianBlur": {
+  					"color":"white",
+  					"result": "blurOut",
+  					"in": "offOut",
+  					"stdDeviation": 5
+  				},
+  				"feBlend": {
+  					"color":"white",
+  					"in": "SourceGraphic",
+  					"in2": "blurOut",
+  					"mode": "normal"
+  				}
+  			}]
+  		},
+  		"dataProvider": [{
+  			"name": "Team",
+  			"percent": 20
+  		}, {
+  			"name": "Early Platform Motivation",
+  			"percent": 20
+  		}, {
+  			"name": "Community",
+  			"percent": 10
+  		}, {
+  			"name": "Foundation",
+  			"percent": 15
+  		}, {
+  			"name": "Pre-sale & ICO",
+  			"percent": 35
+  		}],
+  		"valueField": "percent",
+  		"titleField": "name",
+  		"export": {
+  			"enabled": true
+  		}
+  	});
 
+  	chart.addListener("init", handleInit);
+
+  	chart.addListener("rollOverSlice", function(e) {
+  		handleRollOver(e);
+  	});
+
+  	function handleInit(){
+  		chart.legend.addListener("rollOverItem", handleRollOver);
+  	}
+
+  	function handleRollOver(e){
+  		var wedge = e.dataItem.wedge.node;
+  		wedge.parentNode.appendChild(wedge);
+  	}
+  </script>
+-->
 </head>
 
 
@@ -132,41 +201,41 @@
 
 	<video autoplay loop muted playsinline width="100%" height="80%"  id="background" style="position:relative;z-index:0;">
 		<source src="./resource/worldNetwork1.mp4">
-		<source src="./resource/money.png" onerror ="fallback(parentNode)">
-	</video>
-	<div class="carousel-caption" style="position:absolute;top:40%;left:20%;z-index:1; bottom: 100px;">
-		<font style="font-size:4vw; color:white;"><b>AIPower is</b> <span id="typewrite"></span></font>
-		<p><a class="btn btn-lg btn-primary" href="./resource/AIPower WhitePaper 1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">WhitePaper</a> &nbsp;
-			<a class="btn btn-lg btn-primary" href="./resource/白皮书中文1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">白皮书</a></p>
-		</div>
+			<source src="./resource/money.png" onerror ="fallback(parentNode)">
+			</video>
+			<div class="carousel-caption" style="position:absolute;top:40%;left:20%;z-index:1; bottom: 100px;">
+				<font style="font-size:4vw; color:white;"><b>AIPower is</b> <span id="typewrite"></span></font>
+				<p><a class="btn btn-lg btn-primary" href="./resource/AIPower WhitePaper 1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">WhitePaper</a> &nbsp;
+					<a class="btn btn-lg btn-primary" href="./resource/白皮书中文1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">白皮书</a></p>
+				</div>
 
-		<div class="social-icons" >
-			<a href="https://t.me/aipower" target="_blank"><i class="fa fa-telegram" style="color:white;"></i></a>
-			<a href="https://www.reddit.com/r/aipower/" target="_blank"><i class="fa fa-reddit" style="color:white;"></i></a>
-			<a href="https://www.facebook.com/AIPower-794412944101975/" target="_blank"><i class="fa fa-facebook" style="color:white;"></i></a>
-			<a href="https://twitter.com/AIPower_IO" target="_blank"><i class="fa fa-twitter" style="color:white;"></i></a>
-			<a href="https://www.linkedin.com/company/18560237/" target="_blank"><i class="fa fa-linkedin" style="color:white;"></i></a>
-			<a href="https://github.com/AIPower-io" target="_blank"><i class="fa fa-github" style="color:white;"></i></a>
-		</div>
-	</div>
-
-
+				<div class="social-icons" >
+					<a href="https://t.me/aipower" target="_blank"><i class="fa fa-telegram" style="color:white;"></i></a>
+					<a href="https://www.reddit.com/r/aipower/" target="_blank"><i class="fa fa-reddit" style="color:white;"></i></a>
+					<a href="https://www.facebook.com/AIPower-794412944101975/" target="_blank"><i class="fa fa-facebook" style="color:white;"></i></a>
+					<a href="https://twitter.com/AIPower_IO" target="_blank"><i class="fa fa-twitter" style="color:white;"></i></a>
+					<a href="https://www.linkedin.com/company/18560237/" target="_blank"><i class="fa fa-linkedin" style="color:white;"></i></a>
+					<a href="https://github.com/AIPower-io" target="_blank"><i class="fa fa-github" style="color:white;"></i></a>
+				</div>
+			</div>
 
 
-	<div class="container">
 
 
-		<!--Who we are-->
-		<div class="container featurette" id="about-us">
-			<h2 align="middle" class="featurette-heading"> <b>AIPower</b></h2>
-			<br>
-			<p class="lead">The AIPower team is a group of experts with the background from blockchain technology, renewable energy, information technology, product development and finance development. We believe with the blockchain technology,  we can solve these problems in renewable energy investment, while at the same time improve the operation of current power grid utility, and enhance equality in electricity transaction.</p>
-			<br><br><br>
-		</div>
+			<div class="container">
 
-		<div>
-			<img class="img-responsive center" src="./resource/AIPowerContents.png" alt="AIPower Contents">
-		</div>
+
+				<!--Who we are-->
+				<div class="container featurette" id="about-us">
+					<h2 align="middle" class="featurette-heading"> <b>AIPower</b></h2>
+					<br>
+					<p class="lead">The AIPower team is a group of experts with the background from blockchain technology, renewable energy, information technology, product development and finance development. We believe with the blockchain technology,  we can solve these problems in renewable energy investment, while at the same time improve the operation of current power grid utility, and enhance equality in electricity transaction.</p>
+					<br><br><br>
+				</div>
+
+				<div>
+					<img class="img-responsive center" src="./resource/AIPowerContents.png" alt="AIPower Contents">
+				</div>
 
 
 
@@ -237,11 +306,11 @@
 
 
 	<div class="row featurette">
-		<div class="col-md-2"></div>
-		<div class="col-md-3">
-			<img class="img-responsive coin-icon center-block" src="./resource/AIP.png">
+		<div class="col-md-2 col-sm-3 col-xs-3"></div>
+		<div class="col-md-3 col-sm-6 col-xs-6">
+			<img class="img-responsive coin-icon center-block center" src="./resource/AIP.png">
 		</div>
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-12 col-xs-12">
 			<h3 style="text-align: center;"><b>AIPower Token</b><span class="text-muted">--AIP</span></h3>
 			<p class="lead">Purchased through Token Generation Event (TGE). The amount of AIP that will be issued is limited. AIP is a public traded token of the platform across all projects. <b> Note:</b>Each AIP is representing the amount of work that you have helped our earth to reduce carbon dioxide.
 			</p>
@@ -291,11 +360,11 @@
 	<div class="container">
 		<div class="row featurette">
 			<br><br><br><br>
-			<div class="col-md-1"></div>
-			<div class="col-md-3">
+			<div class="col-md-2 col-sm-3 col-xs-3"></div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
 				<img class="img-responsive coin-icon center-block" src="./resource/PPS.png">
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-5 col-sm-12 col-xs-12"">
 				<h3  style="text-align: center;"><b>PowerPoints Token</b><span class="text-muted">--PPS</span></h3>
 				<p class="lead">PPS is issued per renewable energy project. PPS can be purchased with Ethereum/fiat currency. The amount that gathered will be used to fund the project itself. The holder of PPS of a project is therefore entitled to receive green energy service,
 				</p>
@@ -727,7 +796,7 @@
 				</div>
 				<div id="panel14">Donglei has over 10 years of experience in Marketing and Operation in South Korea. He was previously the President Assistance and Director of South Korea Operations at Chilwee Group. In the past 3 years, Donglei has led many Chinese ICO teams to join the TokenSky Blockchain Conference held in South Korea. He was also the director of both Chinese and Korean blockchain operations teams. Donglei is responsible for providing the best working environment and business processes in South Korea and Japan.</div>
 			</div>
-			</div>
+		</div>
 
 		<div class="row">
 			<div class="col-md-3">
