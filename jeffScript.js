@@ -8,6 +8,39 @@ function teamFunctionOut(ids){
 }
 //</script>
 
+
+// google chart
+function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Distribution', 'AIP (in biliions'],
+        ['Pre-sale & ICO',     35],
+        ['Mining',      20],
+        ['Community',  10],
+        ['Foundation', 15],
+        ['Team',    20]
+        ]);
+
+    var options = {
+    is3D:true,
+        legend:{position:'top', alignment:'center'},
+        backgroundColor:'transparent',
+        legendTextStyle: {color:'#FFF'},
+        titleTextStyle: { color: '#FFF' },
+        hAxis: {
+            textStyle:{color: '#FFF'}
+        }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    chart.draw(data, options);
+}
+
+
+
+
+
 //	<!--Roadmap Animation-->
 	//<script>
 function mapFunction(){
