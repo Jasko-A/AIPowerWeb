@@ -121,6 +121,10 @@ $(document).ready(function(){
   });
 });
 
+$( document ).ready(function() {
+    document.getElementById("background").playbackRate = .72;
+});
+
 //<!--function for when video doesnt play on iPhone-->
 
 function fallback(video)
