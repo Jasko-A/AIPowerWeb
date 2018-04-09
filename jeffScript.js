@@ -131,7 +131,7 @@ function mapFunction(){
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").not("#slideleft").not("#slideright").on('click', function(event) {
+  $("a").not("#slideleft").not("#slideright").on('click touchstart', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -154,6 +154,8 @@ $(document).ready(function(){
   });
 });
 
+
+//background video rate
 $( document ).ready(function() {
     document.getElementById("background").playbackRate = .72;
 });
