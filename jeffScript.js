@@ -1,12 +1,10 @@
 //<!--Team member detail toggle-->
-//<script>
 function teamFunctionIn(ids){
 	$(document.getElementById(ids)).slideDown("slow");	    	
 }	
 function teamFunctionOut(ids){
 	$(document.getElementById(ids)).slideUp("fast");	    	
 }
-//</script>
 
 
 // google chart
