@@ -37,108 +37,11 @@
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
   	google.charts.load('current', {'packages':['corechart']});
-  	google.charts.setOnLoadCallback(drawChart);
+  	google.charts.setOnLoadCallback(drawChartcn);
   </script>
 
-
-  <!-- Fancy PieChart -->
-  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-  <script src="https://www.amcharts.com/lib/3/pie.js"></script>
-  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
   <!-- Jeffrey adding finished -->
 
-  <!-- Fancy PieChart 
-  <script type="text/javascript">
-  	var chart = AmCharts.makeChart("chartdiv", {
-  		"color":"white",
-  		"labelRadius":50,
-  		"fontSize": "15",
-  		"type": "pie",
-  		"startDuration": 0,
-  		"hideCredits":true,
-  		"theme": "light",
-  		"depth3D":1,
-  		"addClassNames": true,
-  		"labelTickColor": "blue",
-  		"labelTickAlpha": 1,
-  		"export":{
-  			"enabled": true,
-		    "menu": [{
-		      "class": "export-main",
-		      "format": "PRINT"
-		    }]
-  		},
-  		"legend":{
-  			"enabled":false
-  		},
-  		"innerRadius": "30%",
-  		"defs": {
-  			"filter": [{
-  				"color":"white",
-  				"id": "shadow",
-  				"width": "200%",
-  				"height": "200%",
-  				"feOffset": {
-  					"result": "offOut",
-  					"in": "SourceAlpha",
-  					"dx": 0,
-  					"dy": 0
-  				},
-  				"feGaussianBlur": {
-  					"color":"white",
-  					"result": "blurOut",
-  					"in": "offOut",
-  					"stdDeviation": 5
-  				},
-  				"feBlend": {
-  					"color":"white",
-  					"in": "SourceGraphic",
-  					"in2": "blurOut",
-  					"mode": "normal"
-  				}
-  			}]
-  		},
-  		"dataProvider": [{
-  			"name": "Team",
-  			"percent": 20
-  		}, {
-  			"name": "Early Platform Motivation",
-  			"percent": 20
-  		}, {
-  			"name": "Community",
-  			"percent": 10
-  		}, {
-  			"name": "Foundation",
-  			"percent": 15
-  		}, {
-  			"name": "Pre-sale & ICO",
-  			"percent": 35
-  		}],
-  		"valueField": "percent",
-  		"titleField": "name",
-  		"export": {
-  			"enabled": true
-  		}
-  	});
-
-  	chart.addListener("init", handleInit);
-
-  	chart.addListener("rollOverSlice", function(e) {
-  		handleRollOver(e);
-  	});
-
-  	function handleInit(){
-  		chart.legend.addListener("rollOverItem", handleRollOver);
-  	}
-
-  	function handleRollOver(e){
-  		var wedge = e.dataItem.wedge.node;
-  		wedge.parentNode.appendChild(wedge);
-  	}
-  </script>
--->
 </head>
 
 
@@ -159,7 +62,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="index.html" class="pull-left"><img src="./resource/whitegreenlogo.png" style="width:168px; height:auto; padding-top:6px;"></a>
+				<a href="index.html" class="pull-left"><img src="./resource/whitegreenlogo.png" style="width:168px; height:auto; padding-top:6px; margin-right: 90px;"></a>
 			</div>
 
 			<div id="navbar" class="navbar-collapse collapse">
@@ -179,12 +82,10 @@
 					<li class="nav-item"><a href="#team">团队介绍</a></li>
 					<li class="nav-item"><a href="#contact">联系我们</a></li>
 				</ul>
-       <!--
        <ul class="nav navbar-nav navbar-right">
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-new-window"></span> Sign up</a></li>
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+          <li class="nav_item"><a href="index.html"><img src="./resource/united-states.png"></a></li>
+          <li class="nav_item"><a href="indexcn.html"><img src="./resource/china.png"></a></li>
        </ul>
-   -->
    <!-- Source Control Mar22.2014 -->
 </div><!--/.nav-collapse -->
 
@@ -204,7 +105,7 @@
 			<source src="./resource/money.png" onerror ="fallback(parentNode)">
 			</video>
 			<div class="carousel-caption" style="position:absolute;top:40%;left:20%;z-index:1; bottom: 100px;">
-				<font style="font-size:4vw; color:white;"><b>AIPower 是</b> <span id="typewrite"></span></font>
+				<font style="font-size:4vw; color:white;"><b>AIPower </b> <span id="typewrite"></span></font>
 				<p><a class="btn btn-lg btn-primary" href="./resource/AIPower WhitePaper 1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">WhitePaper</a> &nbsp;
 					<a class="btn btn-lg btn-primary" href="./resource/白皮书中文1.0.pdf" target="itunes_store" role="button" style="font-size: 2vw;">白皮书</a></p>
 			</div>
@@ -234,7 +135,7 @@
 	</div>
 
 	<div>
-		<img class="img-responsive center" src="./resource/AIPowerContents.png" alt="AIPower Contents" style="width: 70%">
+		<img class="img-responsive center" src="./resource/cnresource/AIPowerContentscn.png" alt="AIPower Contents" style="width: 70%">
 	</div>
 
 
@@ -324,13 +225,13 @@
 	<div class="row featurette">
 
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">能量捐献池
-			<img class="center" src="./resource/AIPdonation.png " style=" width: 70%">
+			<img class="center" src="./resource/cnresource/AIPdonationcn.png " style=" width: 70%">
 		</div>
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">没有额外手续费
-			<img class="center" src="./resource/NoCommissions.png" style=" width: 70%">
+			<img class="center" src="./resource/cnresource/NoCommissionscn.png" style=" width: 70%">
 		</div>
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">平台定期回购
-			<img class="center" src="./resource/buyback.png" style=" width: 70%">
+			<img class="center" src="./resource/cnresource/buybackcn.png" style=" width: 70%">
 		</div> 	
 	</div>
 	<br><br><br>
@@ -338,13 +239,13 @@
 	<div class="row featurette">
 
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">持续发电收益 
-			<img class="center" src="./resource/持续收益.png " style=" width: 70%">
+			<img class="center" src="./resource/cnresource/continuegaincn.png " style=" width: 70%">
 		</div>
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">额外服务折扣
-			<img class="center" src="./resource/额外折扣.png" style=" width: 70%">
+			<img class="center" src="./resource/cnresource/extradiscountcn.png" style=" width: 70%">
 		</div>
 		<div class="tokentitle col-md-4 col-sm-4 col-xs-12">项目上线投票权
-			<img class="center" src="./resource/投票权.png" style=" width: 70%">
+			<img class="center" src="./resource/cnresource/votingcn.png" style=" width: 70%">
 		</div> 	
 	</div>
 
@@ -357,8 +258,8 @@
 <div style="background-color: #15181E;">
 	<div class="container">
 		<br><br><br>
-		<h2 align="middle">T代币分配</h2>
-		<div id="piechart" style="width: 100%; min-height: 550px; margin:0 auto;" class="col-xs-12"></div><br>
+		<h2 align="middle">代币分配</h2>
+		<div id="piechartcn" style="width: 100%; min-height: 550px; margin:0 auto;" class="col-xs-12"></div><br>
 	</div>
 </div>
 
@@ -380,14 +281,14 @@
 			</div>
 			<div class="col-md-2"></div>
 
-			<img class="img-responsive center" src="./resource/PPStrading1.png" width="800">
+			<img class="img-responsive center" src="./resource/cnresource/PPStradingcn.png" width="800">
 	<br><br><br><br><br>
 		</div>
 
 		<h2 style="font-size: 30px;"><span class="text-muted">PPS</span> 是如何定价的？</h2>
 <br><br><br><br><br>
 		<p class="lead" align="center">
-			<img class="img-responsive center" src="./resource/PPSpricing1.png" width="800">
+			<img class="img-responsive center" src="./resource/cnresource/PPSpricingcn.png" width="800">
 			<br>
 		</p>
 		<p class="lead">
@@ -398,7 +299,7 @@
 		<h2 style="font-size: 25px;"><b>完整的流程</b></h2>
 		<p class="lead" align="center">
 			<br><br>
-			<img class="img-responsive zoom-diagram center" id="PPSsale-img" src="./resource/PPSsale1.png" width="1000">
+			<img class="img-responsive zoom-diagram center" id="PPSsale-img" src="./resource/cnresource/PPSsalecn.png" width="1000">
 			<br>
 		</p>
 		<br><br>
@@ -543,82 +444,8 @@
     	<br><br>
     </div>
 
-    <div class="line col-xs-12" onmouseover="mapFunction(this)">
-    	<div class="entries">
-    		<div class="entry map" id="map1">
-    			<div class="title">Q3 2017</div>
-    			<div class="body">
-    				<p>AIPower Initiated</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map2">
-    			<div class="title">Q2 2018</div>
-    			<div class="body">
-    				<p>BD: AIP ICO</p>
-    				<p>R&D: AIP Token 1.0</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map3">
-    			<div class="title">Q3 2018</div>
-    			<div class="body">
-    				<p><span style="float: left; padding-left: 21px;">BD: </span> 1<sup>st</sup> Energy Producer Contract Signed</p>
-    				<p><span style="float: left; padding-left: 21px;">R&D: </span> PPS Token 1.0 <br>PPS Wallet 1.0</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map4">
-    			<div class="title">Q4 2018</div>
-    			<div class="body">
-    				<p>BD: 500MW Projects Contract Signed</p>
-    				<p>R&D: PPS Auction Platform .Beta</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map5">
-    			<div class="title big">Q1 2019</div>
-    			<div class="body">
-    				<p>BD: 1<sup>st</sup> Project PPS selling action initiating</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map6">
-    			<div class="title">Q2 2019</div>
-    			<div class="body">
-    				<p>BD: Contracts Signed with Service Provider &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp & testing with PPS</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map7">
-    			<div class="title big">Q3 2019</div>
-    			<div class="body">
-    				<p>BD: 1GW Projects connected to AIPower Platform</p>
-    				<p><span style="float: left; padding-left: 21px;">R&D: </span><span style="float: right;">PPS Wallet 2.0 <br>PPS Service Initiating</span></p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map8">
-    			<div class="title">Q4 2019</div>
-    			<div class="body">
-    				<p>R&D:</p>
-    				<p>PPS 3.0 (Micro-grid Application)</p>
-    				<p>AI Management Software development</p>
-    				<p>AI Management Hardware development</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map9">
-    			<div class="title">Q1 2020</div>
-    			<div class="body">
-    				<p><span style="float: left; padding-left: 21px;">BD: </span> AI Management Integration</p>
-    				<p><span style="float: left; padding-left: 21px;">R&D: </span> Launch P2P trading marketplace</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map10">
-    			<div class="title">Q2 2020</div>
-    			<div class="body">
-    				<p>BD: AI Micro-Grid in Southest Asia</p>
-    				<p>R&D: AI Micro-Grid 2.0</p>
-    			</div>
-    		</div>
-    		<div class="entry map" id="map11">
-    			<div class="title big" style="text-align: center;">Future</div>
-    		</div>
-    	</div>
-    </div>
+    <img src="./resource/cnresource/roadmapcn.png" class="center img-responsive">
+
 
 
 
@@ -776,7 +603,7 @@
 						</div>
 					
 				</div>
-				<div id="panel22">Graduated from Tbilisi State University, Luka has a Bachelor’s degree in law. And working in public service hall , then in Mildiani family winery. Now he is working for Caucasus Investment Company as a business manager. After graduating from university, Luka later decided to study Chinese, because Chinese culture holds great interest to him. He works hard and diligently to succeed and manage his companies.</div>
+				<div id="panel22">Graduated from Tbilisi State University, Luka has a Bachelor’s degree in law and worked in public service hall then at Mildiani family winery. Now he is working for Caucasus Investment Company as a business manager. After graduating from university, Luka later decided to study Chinese, because Chinese culture holds great interest to him. He works hard and diligently to succeed and manage his companies.</div>
 			</div>
 
 			<div class="col-md-3">
@@ -834,32 +661,16 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="thumbnail" onmouseover="teamFunctionIn('panel26')" onmouseleave="teamFunctionOut('panel26')">
-					
-						<img src="./resource/TeamImg/陈天.png" class="img-circle" alt="Lights" width="304" height="236">
-						<div class="caption">
-							<p><strong>陈天</strong><br>市场经理</p>
-						</div>
-					
-				</div>
-				<div id="panel26">Maria has extensive experience in local government, city planning and business liaison. With a Masters in Entrepreneurship from the University of Nottingham and a can-do attitude, Maria is well qualified to assist businesses in the Chinese market. </div>
-			</div>
-
-			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel2')" onmouseleave="teamFunctionOut('panel2')">
 					
 						<img src="./resource/TeamImg/Shemeca.png" class="img-circle" alt="Lights" width="304" height="236">
 						<div class="caption">
-							<p><strong>Shemeca&nbspWehner</strong><br>总裁助理</p>
+							<p><strong>Shemeca&nbspWehner</strong><br>秘书</p>
 						</div>
 					
 				</div>
-				<div id="panel2">An analytical administrative professional with an extensive background in office procedures, sales and customer service. Shemeca has gained a wealth of knowledge and experience through her (20) twenty years operating within diverse establishments holding various positions. Dedicated to productivity, she is  an efficient organizer and team player. </div>
+				<div id="panel2">分析行政专业人员，具有资深的办公流程，销售和客户服务经验。Shemeca通过20多年在不同机构担任各种职位的经营人员获得了丰富的知识和经验。致力于提高生产力，她是一位高效的组织者和团队合作伙伴 </div>
 			</div>
-
-		</div>
-
-		<div class="row">
 
 			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel15')" onmouseleave="teamFunctionOut('panel15')">
@@ -874,6 +685,9 @@
 				</div>
 			</div>
 
+		</div>
+
+		<div class="row">
 
 			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel20')" onmouseleave="teamFunctionOut('panel20')">
@@ -884,7 +698,7 @@
 						</div>
 					
 				</div>
-				<div id="panel20">Graduated from Tbilisi Free University with honors, specialized in international politics. Cintinued studying in Lanzhou University for internal law Master degree, also graduated with honors. Worked for Embassy of PR China in Georgia, media holding Gbtimes Georgia etc. She is now a business translator for Caucasus Investment company.</div>
+				<div id="panel20">以优异成绩毕业于第比利斯自由大学，专攻国际政治。历任兰州大学留学国际法硕士学位;以荣誉毕业。曾在格鲁吉亚驻中国大使馆和当地Gbtimes Georgia的媒体工作。她现在负责为AIPower在高加索的商业投资伙伴做翻译。</div>
 			</div>
 
 			<div class="col-md-3">
@@ -909,7 +723,7 @@
 						</div>
 					
 				</div>
-				<div id="panel25">Jasmin is a soon to be graduate from the University of California, Davis. Has great extensive experience in web development both front and back-end. Has deep interest and understanding in machine learning and AI.</div>
+				<div id="panel25">Jasmin很快将成为加州大学戴维斯分校的计算机科学专业毕业生。从大学和以前的实习中，他在Web前端和后端的Web开发方面获得了丰富/丰富的经验。对机器学习和AI有深刻的兴趣和理解。</div>
 			</div>
 		</div>
 	</div>
@@ -931,7 +745,7 @@
 						</div>
 					
 				</div>
-				<div id="panel21">Graduated International Black Sea University Faculty of Law , and has continued study in Lithuania (EU) for master degree in International and European Business Law. He has working  in Tbilisi City court, Tbilisi Appellate Court, Financial Bureau (lawyer) and nowadays he is the legal manager of Caucasus Investment Company.</div>
+				<div id="panel21">Shalva毕业于国际黑海大学法律系，并继续在立陶宛（欧盟）学习国际和欧洲商业法硕士学位。Shalva曾在第比利斯上诉法院第比利斯市法院担任财政局（律师）。Shalva担任AIPower法律顾问一职。</div>
 			</div>
 
 			<div class="col-md-3">
@@ -1090,28 +904,25 @@
     			loop: true
     		});
 
-    		typewriter.typeString('Here')
+    		typewriter.typeString('运用了区块链技术')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('Blockchain-based')
+    		.typeString('做到了完全去中心化')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('Truly decentralized')
+    		.typeString('是绝对安全透明的')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('Secure')
+    		.typeString('把能源代币化')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('Tokenlizing Energy')
+    		.typeString('结合了人工智能技术')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('Trusted')
+    		.typeString('旨在改变传统能源结构')
     		.pauseFor(1000)
     		.deleteAll()
-    		.typeString('AI')
-    		.pauseFor(1000)
-    		.deleteAll()
-    		.typeString('Future')
+    		.typeString('正在打造全新的能源生态系统')
     		.pauseFor(1000)
     		.start();
     	</script>

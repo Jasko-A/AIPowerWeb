@@ -48,97 +48,6 @@
   <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
   <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
   <!-- Jeffrey adding finished -->
-
-  <!-- Fancy PieChart 
-  <script type="text/javascript">
-  	var chart = AmCharts.makeChart("chartdiv", {
-  		"color":"white",
-  		"labelRadius":50,
-  		"fontSize": "15",
-  		"type": "pie",
-  		"startDuration": 0,
-  		"hideCredits":true,
-  		"theme": "light",
-  		"depth3D":1,
-  		"addClassNames": true,
-  		"labelTickColor": "blue",
-  		"labelTickAlpha": 1,
-  		"export":{
-  			"enabled": true,
-		    "menu": [{
-		      "class": "export-main",
-		      "format": "PRINT"
-		    }]
-  		},
-  		"legend":{
-  			"enabled":false
-  		},
-  		"innerRadius": "30%",
-  		"defs": {
-  			"filter": [{
-  				"color":"white",
-  				"id": "shadow",
-  				"width": "200%",
-  				"height": "200%",
-  				"feOffset": {
-  					"result": "offOut",
-  					"in": "SourceAlpha",
-  					"dx": 0,
-  					"dy": 0
-  				},
-  				"feGaussianBlur": {
-  					"color":"white",
-  					"result": "blurOut",
-  					"in": "offOut",
-  					"stdDeviation": 5
-  				},
-  				"feBlend": {
-  					"color":"white",
-  					"in": "SourceGraphic",
-  					"in2": "blurOut",
-  					"mode": "normal"
-  				}
-  			}]
-  		},
-  		"dataProvider": [{
-  			"name": "Team",
-  			"percent": 20
-  		}, {
-  			"name": "Early Platform Motivation",
-  			"percent": 20
-  		}, {
-  			"name": "Community",
-  			"percent": 10
-  		}, {
-  			"name": "Foundation",
-  			"percent": 15
-  		}, {
-  			"name": "Pre-sale & ICO",
-  			"percent": 35
-  		}],
-  		"valueField": "percent",
-  		"titleField": "name",
-  		"export": {
-  			"enabled": true
-  		}
-  	});
-
-  	chart.addListener("init", handleInit);
-
-  	chart.addListener("rollOverSlice", function(e) {
-  		handleRollOver(e);
-  	});
-
-  	function handleInit(){
-  		chart.legend.addListener("rollOverItem", handleRollOver);
-  	}
-
-  	function handleRollOver(e){
-  		var wedge = e.dataItem.wedge.node;
-  		wedge.parentNode.appendChild(wedge);
-  	}
-  </script>
--->
 </head>
 
 
@@ -179,12 +88,12 @@
 					<li class="nav-item"><a href="#team">Team</a></li>
 					<li class="nav-item"><a href="#contact">Contact Us</a></li>
 				</ul>
-       <!--
+       
        <ul class="nav navbar-nav navbar-right">
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-new-window"></span> Sign up</a></li>
-          <li class="nav_item"><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+          <li class="nav_item"><a href="index.html"><img src="./resource/united-states.png"></a></li>
+          <li class="nav_item"><a href="indexcn.html"><img src="./resource/china.png"></a></li>
        </ul>
-   -->
+
    <!-- Source Control Mar22.2014 -->
 </div><!--/.nav-collapse -->
 
@@ -826,32 +735,16 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="thumbnail" onmouseover="teamFunctionIn('panel26')" onmouseleave="teamFunctionOut('panel26')">
-					
-						<img src="./resource/TeamImg/陈天.png" class="img-circle" alt="Lights" width="304" height="236">
-						<div class="caption">
-							<p><strong>Tian&nbspChen</strong><br>Marketing Manager</p>
-						</div>
-					
-				</div>
-				<div id="panel26">Maria has extensive experience in local government, city planning and business liaison. With a Master's degree in Entrepreneurship from the University of Nottingham, Maria is well qualified to assist businesses in the Chinese market. </div>
-			</div>
-
-			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel2')" onmouseleave="teamFunctionOut('panel2')">
 					
 						<img src="./resource/TeamImg/Shemeca.png" class="img-circle" alt="Lights" width="304" height="236">
 						<div class="caption">
-							<p><strong>Shemeca&nbspWehner</strong><br>Executive Secretary</p>
+							<p><strong>Shemeca&nbspWehner</strong><br>ecretary</p>
 						</div>
 					
 				</div>
 				<div id="panel2">An analytical administrative professional with an extensive background in office procedures, sales and customer service. Shemeca has gained a wealth of knowledge and experience through her (20) twenty years operating within diverse establishments holding various positions. Dedicated to productivity, she is an efficient organizer and team player. </div>
 			</div>
-
-		</div>
-
-		<div class="row">
 
 			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel15')" onmouseleave="teamFunctionOut('panel15')">
@@ -865,6 +758,9 @@
 				<div id="panel15">Li has years of experience as a journalist in both China and South Korea. She started researching and studying blockchain technology in the beginning of 2017, and she attended TokenSky Blockchain Conference held in South Korea 2018 as an assistant. She will assist Donglei in Marketing and Operations.</div>
 			</div>
 
+		</div>
+
+		<div class="row">
 
 			<div class="col-md-3">
 				<div class="thumbnail" onmouseover="teamFunctionIn('panel20')" onmouseleave="teamFunctionOut('panel20')">

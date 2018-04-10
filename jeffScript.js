@@ -36,6 +36,33 @@ function drawChart() {
 }
 
 
+function drawChartcn() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Distribution', 'AIP (in biliions'],
+        ['ICO 公开发行',     35],
+        ['早起平台激励',      20],
+        ['社区运营',  10],
+        ['基金会运营', 15],
+        ['团队激励',    20]
+        ]);
+
+    var options = {
+    is3D:true,
+        legend:{position:'top', alignment:'center'},
+        backgroundColor:'transparent',
+        legendTextStyle: {color:'#FFF'},
+        titleTextStyle: { color: '#FFF' },
+        hAxis: {
+            textStyle:{color: '#FFF'}
+        }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechartcn'));
+
+    chart.draw(data, options);
+}
+
 
 
 
