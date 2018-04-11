@@ -305,39 +305,19 @@
 
 		<br><br><br><br><br><br>
 		<h2 style="font-size: 25px;"><b>Complete Path</b></h2>
+		<div onclick="zooming('myZoom','PPSsale-img','PPSzoom','caption', 'close')">
 		<p class="lead" align="center">
 			<br><br>
-			<img class="img-responsive zoom-diagram center" id="PPSsale-img" src="./resource/PPSsale1.png" width="1000">
+			<img class="img-responsive zoom-diagram center" id="PPSsale-img" src="./resource/PPSsale1.png" width="1000" >
 			<br>
 		</p>
+		</div>
 		<br><br>
 		<div id="myZoom" class="zoom">
 			<span class="close">&times;</span>
 			<img class="zoom-content" id="PPSzoom">
 			<div id="caption"></div>
 		</div>
-		<script>
-    // Get the zoom element
-    var modal = document.getElementById("myZoom");
-
-    // Get the image and insert it inside zoom 
-    var img = document.getElementById("PPSsale-img");
-    var modalImg = document.getElementById("PPSzoom");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    	modal.style.display = "block";
-    	modalImg.src = this.src;
-    	captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    	modal.style.display = "none";
-    }
-</script>	  
 <br><br><br>
 </div>
 </div>
