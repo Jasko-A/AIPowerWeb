@@ -13,7 +13,7 @@ function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Distribution', 'AIP (in biliions'],
         ['Pre-sale & ICO',     35],
-        ['Mining',      20],
+        ['Early Bird Reward',      20],
         ['Community',  10],
         ['Foundation', 15],
         ['Team',    20]
@@ -25,6 +25,7 @@ function drawChart() {
         backgroundColor:'transparent',
         legendTextStyle: {color:'#FFF'},
         titleTextStyle: { color: '#FFF' },
+        colors: ['violet', 'lightblue', 'hotpink', 'skyblue', '#f6c7b6'],
         hAxis: {
             textStyle:{color: '#FFF'}
         }
@@ -41,7 +42,7 @@ function drawChartcn() {
     var data = google.visualization.arrayToDataTable([
         ['Distribution', 'AIP (in biliions'],
         ['ICO 公开发行',     35],
-        ['早起平台激励',      20],
+        ['早期平台激励',      20],
         ['社区运营',  10],
         ['基金会运营', 15],
         ['团队激励',    20]
@@ -53,6 +54,7 @@ function drawChartcn() {
         backgroundColor:'transparent',
         legendTextStyle: {color:'#FFF'},
         titleTextStyle: { color: '#FFF' },
+        colors: ['violet', 'lightblue', 'hotpink', 'skyblue', '#f6c7b6'],
         hAxis: {
             textStyle:{color: '#FFF'}
         }
