@@ -196,3 +196,26 @@ function fallback(video)
   if (img)
     video.parentNode.replaceChild(img, video);
 }
+
+//Created reusable function for image zoom
+function zooming(myImg, image, zoomImg, caption, closer) {
+    var modal = document.getElementById(myImg);
+
+    // Get the image and insert it inside zoom 
+    var img = document.getElementById(image);
+    var modalImg = document.getElementById(zoomImg);
+    var captionText = document.getElementById(caption);
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName(closer)[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+}
