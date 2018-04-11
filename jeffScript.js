@@ -26,6 +26,7 @@ function drawChart() {
         legendTextStyle: {color:'#FFF'},
         titleTextStyle: { color: '#FFF' },
         colors: ['violet', 'lightblue', 'hotpink', 'skyblue', '#f6c7b6'],
+        //colors:['violet', '#fc7700', '#406bca', '#5ab438', '#4d98db'],
         hAxis: {
             textStyle:{color: '#FFF'}
         }
