@@ -21,6 +21,7 @@ function drawChart() {
 
     var options = {
     is3D:true,
+        tooltip:{text:'percentage'},
         legend:{position:'top', alignment:'center'},
         backgroundColor:'transparent',
         legendTextStyle: {color:'#FFF'},
@@ -41,7 +42,7 @@ function drawChart() {
 function drawChartcn() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Distribution', 'AIP (in biliions'],
+        ['Distribution', 'AIP (in biliions)'],
         ['ICO 公开发行',     35],
         ['早期平台激励',      20],
         ['社区运营',  10],
@@ -50,7 +51,8 @@ function drawChartcn() {
         ]);
 
     var options = {
-    is3D:true,
+        is3D:true,
+        tooltip:{text:'percentage'},
         legend:{position:'top', alignment:'center'},
         backgroundColor:'transparent',
         legendTextStyle: {color:'#FFF'},
