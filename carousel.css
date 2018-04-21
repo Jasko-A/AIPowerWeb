@@ -38,12 +38,54 @@ body {
   padding-left: 200px;
 }
 
+.login-overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  color: black;
+  margin:0;
+  font-size: 40px;
+}
+.login-zone {
+    width:40%;
+    height: 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    border-radius: 50px;
+
+}
+input {
+  font-size: 25px;
+  color: black;
+}
+#login-button {
+  font-size:23px;
+  color:green;
+  background: grey;
+  width:20%;
+  align-self: center;
+  border:none;
+}
+
 /* resize navbar when at most 991px on screen size*/
 @media (max-width: 991px) {
 
     /* Carousel base class */
     .carousel {
-      width: 100%
+      width: 100%;
       height: 200px;
       margin-bottom: 60px;
     }

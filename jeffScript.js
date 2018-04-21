@@ -222,3 +222,26 @@ function zooming(myImg, image, zoomImg, caption, closer) {
         modal.style.display = "none";
     }
 }
+var initialScreen = true;
+var inOverlay = false;
+function showOverlay() {
+    document.getElementById("overlay").style.display = "flex";
+    inOverlay = true;
+    initialScreen = true;
+}
+function closeOverlay() {
+    document.getElementById("overlay").style.display = "none";
+    inOverlay = false;
+}
+
+$(document).mouseup(function(e) 
+{
+    var container = $(".loginp-overlay");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        closeOverlay();
+    }
+});
+

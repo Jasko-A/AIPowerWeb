@@ -58,6 +58,15 @@
 =====X X X X=====
 -->
 <body>
+	<div class="login-overlay" id="overlay">
+		<div class="login-zone">
+			<p id="login">Enter here</p>
+			<input type="text" id="" placeholder="username">
+			<input type="text" id="" placeholder="passwword">
+			<button id="login-button" onlick="">Login</button>
+			
+		</div>
+	</div>
 	<!-- Fixed navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -86,7 +95,9 @@
 					<li class="nav-item"><a href="#token">Token Model</a></li>
 					<li class="nav-item"><a href="#Roadmap" onclick="mapFunction(this)">Road Map</a></li>
 					<li class="nav-item"><a href="#team">Team</a></li>
-					<li class="nav-item"><a href="#contact">Contact Us</a></li>
+					<li class="nav-item"><a href="#contact" >Contact Us</a></li>
+					<li class="nav-item"><button style="margin-top: 12px;" onclick="showOverlay()">Sign Up</button></li>
+					<li class="nav-item"><a>Login</a></li>
 				</ul>
        
        <ul class="nav navbar-nav navbar-right">
